@@ -6,6 +6,8 @@ let isAlive = true
 
 let message = ""
 
+let messageEl = document.getElementById("message-el")
+
 function startGame() {
     if (sum <= 20){
         message = "do you want to draw again?"
@@ -19,7 +21,8 @@ function startGame() {
     
     }
     
-    console.log(message)
+     messageEl.textContent = message
+   
 }
 
 
