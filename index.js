@@ -10,7 +10,7 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
-
+let list = ["snhu comp science degree", "countertop jobs", "full stack web deveelopement"]
 function startGame(){
     renderGame()
 }
