@@ -41,3 +41,10 @@ function newCard() {
     renderGame()
     array.push(cardKing)
 }
+
+
+    // i can be reused think of it as var and only functions inside the curly brackets
+            //
+// for (let i = 10; i < 110; i += 10){
+//     console.log(i)
+// }
