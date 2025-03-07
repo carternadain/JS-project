@@ -1,5 +1,5 @@
-let firstCard = 10
-let secondCard = 10
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 let array = [firstCard,secondCard]
 let sum = firstCard + secondCard 
 let hasBlackJack = false
@@ -11,7 +11,13 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
-let list = ["snhu comp science degree", "countertop jobs", "full stack web deveelopement"]
+// let list = ["snhu comp science degree", "countertop jobs", "full stack web deveelopement"]
+
+function getRandomCard(){
+    return 5
+}
+
+
 function startGame(){
     renderGame()
 }
@@ -39,7 +45,7 @@ function renderGame() {
 }
 
 function newCard() {
-    let cardKing = 10
+    let cardKing = getRandomCard()
     sum += cardKing
     renderGame()
     array.push(cardKing)
@@ -57,3 +63,12 @@ function newCard() {
 // for (let i = 0; i < cards.length; i++){
 //     console.log(cards[i])
 // }
+
+
+// function totalRaceTime() {
+//    return player1Time + player2Time
+
+// }
+
+// let totalTime = totalRaceTime()
+// console.log(totalRaceTime)
