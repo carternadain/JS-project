@@ -72,3 +72,14 @@ function newCard() {
 
 // let totalTime = totalRaceTime()
 // console.log(totalRaceTime)
+
+// let randomNumnber = Math.floor( Math.random() * 6) + 1
+
+// console.log(randomNumnber)
+
+function rollDice() {
+   let randomNumnber = Math.floor( Math.random() * 6) + 1
+   return randomNumnber
+}
+
+console.log(rollDice())
