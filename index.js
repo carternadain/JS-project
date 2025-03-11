@@ -14,7 +14,9 @@ let cardsEl = document.getElementById("cards-el")
 let list = ["snhu comp science degree", "countertop jobs", "full stack web deveelopement"]
 
 function getRandomCard(){
-    return 5
+    let randomNumnber = Math.floor( Math.random() * 12) + 1
+    return Math.floor(Math.random()*13) + 1
+   
 }
 
 
