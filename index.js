@@ -11,11 +11,19 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
-let list = ["snhu comp science degree", "countertop jobs", "full stack web deveelopement"]
+
 
 function getRandomCard(){
-    let randomNumnber = Math.floor( Math.random() * 12) + 1
-    return Math.floor(Math.random()*13) + 1
+    let randomNumnber = Math.floor(Math.random()*13) + 1
+     if (randomNumnber > 10){
+        return 10
+    }
+    else if (randomNumnber === 1){
+        return 11
+    } else {
+        return randomNumnber
+    }
+   
    
 }
 
@@ -54,34 +62,4 @@ function newCard() {
 }
 
 
-    // i can be reused think of it as var and only functions inside the curly brackets
-            //
-// for (let i = 10; i < 110; i += 10){
-//     console.log(i)
-// }
-
-
-// let cards = [7, 3, 9]
-// for (let i = 0; i < cards.length; i++){
-//     console.log(cards[i])
-// }
-
-
-// function totalRaceTime() {
-//    return player1Time + player2Time
-
-// }
-
-// let totalTime = totalRaceTime()
-// console.log(totalRaceTime)
-
-// let randomNumnber = Math.floor( Math.random() * 6) + 1
-
-// console.log(randomNumnber)
-
-function rollDice() {
-   let randomNumnber = Math.floor( Math.random() * 6) + 1
-   return randomNumnber
-}
-
-console.log(rollDice())
+   
