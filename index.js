@@ -1,9 +1,9 @@
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
-let array = [firstCard,secondCard]
-let sum = firstCard + secondCard 
+let array = []
+let sum = 0
 let hasBlackJack = false
-let isAlive = true
+let isAlive = false
 
 let message = ""
 
@@ -29,6 +29,11 @@ function getRandomCard(){
 
 
 function startGame(){
+    isAlive = true
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+    array = [firstCard,secondCard]
+    sum = firstCard + secondCard
     renderGame()
 }
 
