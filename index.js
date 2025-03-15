@@ -1,10 +1,7 @@
-let firstCard = getRandomCard()
-let secondCard = getRandomCard()
-let array = []
+let cards = []
 let sum = 0
 let hasBlackJack = false
 let isAlive = false
-
 let message = ""
 
 let messageEl = document.getElementById("message-el")
@@ -32,17 +29,17 @@ function startGame(){
     isAlive = true
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
-    array = [firstCard,secondCard]
+    cards = [firstCard,secondCard]
     sum = firstCard + secondCard
     renderGame()
 }
 
 function renderGame() {
     cardsEl.textContent = "Cards: " 
-    for(i = 0; i < array.length; i++){
-       cardsEl.textContent += array[i] + " "
+    for(i = 0; i < cards.length; i++){
+       cardsEl.textContent += cards[i] + " "
     }
-
+    sumEl.textContent = "sum:" + sum
     if (sum <= 20){
         message = "do you want to draw again?"
        
@@ -60,35 +57,38 @@ function renderGame() {
 }
 
 function newCard() {
-    let cardKing = getRandomCard()
-    sum += cardKing
-    renderGame()
-    array.push(cardKing)
+    if(isAlive === true && hasBlackJack === false ){
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        renderGame()
+    }
+   
 }
 
-let hasSolvedChallenge = false
-let hasHintsLeft = false
+// let hasSolvedChallenge = false
+// let hasHintsLeft = false
 
-// Create an if statement that checks that both variables are false.
-// If so, run the showSolution() function
+// // Create an if statement that checks that both variables are false.
+// // If so, run the showSolution() function
 
-if (hasSolvedChallenge === false && hasHintsLeft === false){
-    showSolution()
-}
+// if (hasSolvedChallenge === false && hasHintsLeft === false){
+//     showSolution()
+// }
 
-function showSolution() {
-    console.log("Showing the solution....")
-}
+// function showSolution() {
+//     console.log("Showing the solution....")
+// }
 
-let likesDocumentaries = true
-let likesStartups = false
-// Create two boolean variables, likesDocumentaries and likesStartups
-// Use an OR statement (||) to call recommendMovie() if either of those variables are true
-if (likesDocumentaries === true || likesStartups === true){
-    recommendMovie()
-}
+// let likesDocumentaries = true
+// let likesStartups = false
+// // Create two boolean variables, likesDocumentaries and likesStartups
+// // Use an OR statement (||) to call recommendMovie() if either of those variables are true
+// if (likesDocumentaries === true || likesStartups === true){
+//     recommendMovie()
+// }
 
 
-function recommendMovie() {
-    console.log("Hey, check out this new film we think you will like!")
-}
+// function recommendMovie() {
+//     console.log("Hey, check out this new film we think you will like!")
+// }
