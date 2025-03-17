@@ -97,15 +97,33 @@ function newCard() {
 // / Objects - store data in-depth - composite / complex data type
 // key-value pairs
 
-let course = {
-    title: "Learn CSS Grid for free",
-    lessons: 16,
-    creator: "Per Harald Borgen",
-    length: 63,
-    level: 2,
-    isFree: true,
-    tags: ["html", "css"]
-}
+// let course = {
+//     title: "Learn CSS Grid for free",
+//     lessons: 16,
+//     creator: "Per Harald Borgen",
+//     length: 63,
+//     level: 2,
+//     isFree: true,
+//     tags: ["html", "css"]
+// }
 
 
-console.log( course.length )
+// console.log( course.length )
+
+
+// function carterCat(){
+    //body of function 
+    //how to call a function ()
+// }
+
+// let array = [dog , cat , zebra, rhino]
+
+// console.log(array)
+
+// for (i = 0; i + array; i++){
+//setting   sorting the array  increamenting array how we sort  
+//the value of i
+// }
+
+// grabbing element by id from html and returning it to text in JS
+let getElementById = textContent
