@@ -126,4 +126,17 @@ function newCard() {
 // }
 
 // grabbing element by id from html and returning it to text in JS
-let getElementById = textContent
+// let getElementById = textContent
+
+let airbnbStays = {
+    title: "live like a king" ,
+    ratings:"5 stars",
+    guests: "up to four people",
+    isSuperHost:true,
+    images:["img/castle1.png", "img/supercastle.png"]
+
+
+}
+
+console.log(airbnbStays.title)
+console.log(airbnbStays.isSuperHost)
