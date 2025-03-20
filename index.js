@@ -1,3 +1,7 @@
+let player = {
+    name: "Carter",
+    chips: 50
+}
 let cards = []
 let sum = 0
 let hasBlackJack = false
@@ -7,7 +11,9 @@ let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
+let playerEl = document.getElementById("player-el")
 
+playerEl.textContent = player.name + ": $" + player.chips
 
 
 function getRandomCard(){
@@ -128,15 +134,15 @@ function newCard() {
 // grabbing element by id from html and returning it to text in JS
 // let getElementById = textContent
 
-let airbnbStays = {
-    title: "live like a king" ,
-    ratings:"5 stars",
-    guests: "up to four people",
-    isSuperHost:true,
-    images:["img/castle1.png", "img/supercastle.png"]
+// let airbnbStays = {
+//     title: "live like a king" ,
+//     ratings:"5 stars",
+//     guests: "up to four people",
+//     isSuperHost:true,
+//     images:["img/castle1.png", "img/supercastle.png"]
 
 
-}
+// }
 
-console.log(airbnbStays.title)
-console.log(airbnbStays.isSuperHost)
+// console.log(airbnbStays.title)
+// console.log(airbnbStays.isSuperHost)
