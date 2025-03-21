@@ -146,3 +146,19 @@ function newCard() {
 
 // console.log(airbnbStays.title)
 // console.log(airbnbStays.isSuperHost)
+
+
+
+let personObject = {
+    name:"Carter " ,
+    age: 28,
+    county: " America"
+}
+
+function logData() {
+   let data = personObject.name + personObject.age + personObject.county
+    console.log(data)
+
+}
+
+logData()
