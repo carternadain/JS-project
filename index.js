@@ -192,4 +192,11 @@ let weekday = "Friday"
 if (dayOfMonth === 13 && weekday === "friday" ){
     console.log("spooky face")
 }
+let hands = ["rock", "paper", "scissor"]
 
+function getHand() {
+    let game = Math.floor (Math.random() * 3)
+    return hands[game]
+}
+
+console.log(getHand())
