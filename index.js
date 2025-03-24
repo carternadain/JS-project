@@ -183,3 +183,13 @@ let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
 for(i = 0; i < largeCountries.length; i++){
     console.log(largeCountries[i])
  }
+
+
+let dayOfMonth = 31
+let weekday = "Friday"
+
+
+if (dayOfMonth === 13 && weekday === "friday" ){
+    console.log("spooky face")
+}
+
