@@ -1,6 +1,12 @@
 // Step 1: Get references to the HTML elements we'll be interacting with
 // - You need to select the button (for generating the password) and the input field (to display the password).
 
+let inputPassword = document.getElementById("password")
+let generatePasswordButton = document.getElementById("generate-password")
+
+let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()';
+let password = ""
+
 // Step 2: Create a function to generate a random password
 // - You will define all the possible characters you want to include in your password.
 //   These will likely include:
@@ -9,6 +15,19 @@
 //   - numbers
 //   - special characters like !@#$%^&*()
 
+function generateRandomPassword (){
+    for  (let i = 0 ; i < 12; i++) { 
+       
+        let randomIndex = Math.floor(Math.random() * characters.length)
+
+        let randomChar = characters[randomIndex]
+        password += randomChar;
+        }
+
+        inputPassword.value = password;
+    }
+
+generatePasswordButton.addEventListener("click", generateRandomPassword)
 // Step 3: Set the desired password length
 // - Decide how many characters you want the password to be (for example, 12 characters).
 
