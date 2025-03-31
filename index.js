@@ -1,5 +1,5 @@
-function button (){
-    console.log("button is clicked")
-}
+let button = document.getElementById("input-btn")
 
-button()
+button.addEventListener("click", function(){
+    console.log("you clicked me!")
+})
