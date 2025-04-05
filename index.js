@@ -22,6 +22,7 @@ function renderLeads () {
         </li>
     `
     }
+    
     ulEl.innerHTML = listItems
 }
 
