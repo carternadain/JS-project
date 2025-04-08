@@ -14,7 +14,8 @@ inputBtn.addEventListener("click", function(){
 // function to renderleads , loop to iterate through the array
 function renderLeads () {
     let listItems = ""
-    for (let i = 0; i < myLeads.length; i++) {
+    for (let i = 0; i < myLeads.length; i++) { 
+        listItems +=
         `
         <li>
             <a target='_blank' href='${myLeads[i]}'>
