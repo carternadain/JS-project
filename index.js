@@ -1,19 +1,19 @@
-let myLeads = `["www.hello.com"]`
+let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 
-myLeads =JSON.parse(myLeads)
 
-myLeads.push("www.hello.com")
-myLeads = JSON.stringify(myLeads)
-console.log(typeof myLeads)
 // listner for when user clicks button , then fires the function of the empty array myleads
 // and adds the input value the user puts 
 inputBtn.addEventListener("click", function(){
     myLeads.push(inputEl.value)
     inputEl.value = ""
+   localStorage.setItem("myLeads",JSON.stringify(myLeads))
+
     renderLeads()
+
+    console.log( localStorage.getItem("myLeads") )
 })
 
 // function to renderleads , loop to iterate through the array
