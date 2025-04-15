@@ -42,7 +42,7 @@ function renderLeads () {
         </li>
     `
     }
-    
+    // innerhtml to show html on page 
     ulEl.innerHTML = listItems
 }
 
