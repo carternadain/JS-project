@@ -20,9 +20,9 @@ console.log(email)
 
 const welcomeEl = document.getElementById("welcome-el")
 
-// Give the function a parameter, greeting, that replaces "Welcome back"
-function greetUser(user) {
-    welcomeEl.textContent = "hello there," + user     
+function greetUser(greeting, name, emjoi) {
+    // Rewrite the expression using template literals
+    welcomeEl.textContent = `${greeting} , ${name}  , ${emjoi}`
 }
 
-greetUser(user)
+greetUser("Howdy", "James" ,"👋")
