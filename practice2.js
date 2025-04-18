@@ -18,11 +18,19 @@ Cheers ${sender}`
 console.log(email)
 
 
-const welcomeEl = document.getElementById("welcome-el")
+// const welcomeEl = document.getElementById("welcome-el")
 
-function greetUser(greeting, name, emjoi) {
-    // Rewrite the expression using template literals
-    welcomeEl.textContent = `${greeting} , ${name}  , ${emjoi}`
+// function greetUser(greeting, name, emjoi) {
+//     // Rewrite the expression using template literals
+//     welcomeEl.textContent = `${greeting} , ${name}  , ${emjoi}`
+// }
+
+// greetUser("Howdy", "James" ,"👋")
+
+
+function add (sum1, sum2) {
+    return sum1 + sum2
 }
 
-greetUser("Howdy", "James" ,"👋")
+console.log(add (3,4) )
+console.log(add (9,102) )
