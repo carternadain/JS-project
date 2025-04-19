@@ -10,6 +10,10 @@ const tabBtn = document.getElementById("save-tab")
 // let leads for locals storage save in browser 
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
+const tabs = [
+    {url: "https://www.linkedin.com/in/per-harald-borgen/"}
+]
+
 // create truthy value for local storage
 if(leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
@@ -17,7 +21,10 @@ if(leadsFromLocalStorage) {
 }
  
 tabBtn.addEventListener("click", function() {
-    console.log("its working")
+    myLeads.push(tabs[0].url)
+    inputEl.value = ""
+    localStorage.setItem("myLeads",JSON.stringify(myLeads))
+    render(myLeads)
 })
 
 deleteBtn.addEventListener("dblclick", function(){
