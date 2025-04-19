@@ -6,6 +6,7 @@ const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
 
+const tabBtn = document.getElementById("save-tab")
 // let leads for locals storage save in browser 
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
@@ -15,6 +16,10 @@ if(leadsFromLocalStorage) {
     render(myLeads)
 }
  
+tabBtn.addEventListener("click", function() {
+    console.log("its working")
+})
+
 deleteBtn.addEventListener("dblclick", function(){
     localStorage.clear()
     myLeads = []
