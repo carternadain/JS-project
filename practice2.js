@@ -1,70 +1,88 @@
-let boxBtn = document.getElementById("box")
+// let boxBtn = document.getElementById("box")
 
-boxBtn.addEventListener("click", function() {
-    console.log("i want to opent he box when its clicked")
-})
-
-
-// template strings/literals
-
-const recipient = "James"
-const sender = "Per Harald Borgen"
-
-// Break the email string into multiple lines
-const email = `Hey ${recipient}! 
-How is it going? 
-Cheers ${sender}`
-
-console.log(email)
+// boxBtn.addEventListener("click", function() {
+//     console.log("i want to opent he box when its clicked")
+// })
 
 
-// const welcomeEl = document.getElementById("welcome-el")
+// // template strings/literals
 
-// function greetUser(greeting, name, emjoi) {
-//     // Rewrite the expression using template literals
-//     welcomeEl.textContent = `${greeting} , ${name}  , ${emjoi}`
+// const recipient = "James"
+// const sender = "Per Harald Borgen"
+
+// // Break the email string into multiple lines
+// const email = `Hey ${recipient}! 
+// How is it going? 
+// Cheers ${sender}`
+
+// console.log(email)
+
+
+// // const welcomeEl = document.getElementById("welcome-el")
+
+// // function greetUser(greeting, name, emjoi) {
+// //     // Rewrite the expression using template literals
+// //     welcomeEl.textContent = `${greeting} , ${name}  , ${emjoi}`
+// // }
+
+// // greetUser("Howdy", "James" ,"👋")
+
+
+// function add (sum1, sum2) {
+//     return sum1 + sum2
 // }
 
-// greetUser("Howdy", "James" ,"👋")
+// console.log(add (3,4) )
+// console.log(add (9,102) )
 
 
-function add (sum1, sum2) {
-    return sum1 + sum2
-}
+// function getFirst(arr) {
+//     return arr[0]
+// }
 
-console.log(add (3,4) )
-console.log(add (9,102) )
+// let firstCard = getFirst([2,3,5])
 
-
-function getFirst(arr) {
-    return arr[0]
-}
-
-let firstCard = getFirst([2,3,5])
-
-console.log(firstCard)
+// console.log(firstCard)
 
 
 
 
 
-// SETTING THE STAGE
-const player = "Per"
-const opponent = "Nick"
-const game = "AmazingFighter"
-let points = 0
-let hasWon = false
+// // SETTING THE STAGE
+// const player = "Per"
+// const opponent = "Nick"
+// const game = "AmazingFighter"
+// let points = 0
+// let hasWon = false
 
-// PLAYING THE GAME
-points += 100
-hasWon = true
+// // PLAYING THE GAME
+// points += 100
+// hasWon = true
 
-// ANNOUNCING THE WINNER
-if (hasWon) {
-    console.log(player + " got " + points + " points and won the " + game + " game!")
-} else {
-    console.log("The winner is " + opponent + "! " + player + " lost the game")
-}
+// // ANNOUNCING THE WINNER
+// if (hasWon) {
+//     console.log(player + " got " + points + " points and won the " + game + " game!")
+// } else {
+//     console.log("The winner is " + opponent + "! " + player + " lost the game")
+// }
 
-// Go through all variables and decide if they should be let or const
-// Change the console logs to use template strings instead of double quotes
+// // Go through all variables and decide if they should be let or const
+// // Change the console logs to use template strings instead of double quotes
+
+
+
+let myCourses = ["Learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"]
+
+// Create a function that takes a single parameter, an array,
+// and logs all the items of the array to the console.
+// Call the function while passing in myCourses as an argument
+
+
+
+
+function hello (arr) {
+    for (let i = 0; i < arr.length; i++)
+    console.log(arr[i])
+   
+ }
+ hello(myCourses)
