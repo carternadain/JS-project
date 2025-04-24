@@ -25,7 +25,7 @@
 // //     welcomeEl.textContent = `${greeting} , ${name}  , ${emjoi}`
 // // }
 
-// // greetUser("Howdy", "James" ,"👋")
+// greetUser("Howdy", "James" ,"👋")
 
 
 // function add (sum1, sum2) {
@@ -92,8 +92,30 @@
  // Save a value to localStorage
 // Delete your code and refresh the page
 // Fetch your value from localStorage and log it out
-localStorage.setItem("myCat", "Tom");
-const cat = localStorage.getItem("myCat");
-localStorage.removeItem("myCat");
+// localStorage.setItem("myCat", "Tom");
+// const cat = localStorage.getItem("myCat");
+// localStorage.removeItem("myCat");
 
-console.log(localStorage)
+// console.log(localStorage)
+
+
+let data = [
+    {
+        player: "Jane",
+        score: 52
+    }, 
+    {
+        player: "Mark",
+        score: 41
+    }
+]
+
+// Fetch the button from the DOM, store it in a variable
+// Use addEventListener() to listen for button clicks
+// Log Jane's score when the button is clicked (via data)
+
+let button = document.getElementById("score")
+
+button.addEventListener("click",function (){
+    console.log(data)
+})
