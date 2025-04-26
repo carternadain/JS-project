@@ -99,26 +99,26 @@
 // console.log(localStorage)
 
 
-let data = [
-    {
-        player: "Jane",
-        score: 52
-    }, 
-    {
-        player: "Mark",
-        score: 41
-    }
-]
+// let data = [
+//     {
+//         player: "Jane",
+//         score: 52
+//     }, 
+//     {
+//         player: "Mark",
+//         score: 41
+//     }
+// ]
 
 // Fetch the button from the DOM, store it in a variable
 // Use addEventListener() to listen for button clicks
 // Log Jane's score when the button is clicked (via data)
 
-let button = document.getElementById("score")
+// let button = document.getElementById("score")
 
-button.addEventListener("click",function (){
-    console.log(data)
-})
+// button.addEventListener("click",function (){
+//     console.log(data)
+// })
 
 
 // The generateSentence(desc, arr) takes two parameterer: a description and an array.
@@ -131,18 +131,44 @@ button.addEventListener("click",function (){
 // "The 2 best fruits are Apples, Bananas"
 
 // Use both gerateSentence(desc, arr) {
-    function generateSentence(desc, arr) {
-        let baseString = `The ${arr.length} ${desc} are `
-        const lastIndex = arr.length - 1
-        for (let i = 0; i < arr.length; i++) {
-            if (i === lastIndex) {
-                baseString += arr[i]
-            } else {
-                baseString += arr[i] + ", "   
-            }
-        }
-        return baseString
-    }
+    // function generateSentence(desc, arr) {
+    //     let baseString = `The ${arr.length} ${desc} are `
+    //     const lastIndex = arr.length - 1
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (i === lastIndex) {
+    //             baseString += arr[i]
+    //         } else {
+    //             baseString += arr[i] + ", "   
+    //         }
+    //     }
+    //     return baseString
+    // }
     
-    const sentence = generateSentence("highest mountains", ["Mount Everest", "K2"])
-    console.log(sentence)
+    // const sentence = generateSentence("highest mountains", ["Mount Everest", "K2"])
+    // console.log(sentence)
+
+
+
+// id = container 
+// get the id transfer to inner html loop through array with for loop
+// Create a function that renders the three team images
+// Use a for loop, template strings (``), plus equals (+=)
+// .innerHTML to solve the challenge.
+
+
+const imgs = [
+    "images/hip1.jpg",
+    "images/hip2.jpg",
+    "images/hip3.jpg"
+]
+
+
+
+function imgRender() {
+    
+    for( let i = 0; i < imgs.length; i++ )
+    console.log(imgs[i])
+    // let image = getElementById("container")
+}
+
+imgRender()
