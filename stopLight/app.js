@@ -5,10 +5,16 @@ let yellowLight = document.getElementById("yellow")
 
 let next = document.getElementById("next")
 
-let lights = ["redlight", "greenlight", "yellowLight"]
+let lights = [redLight, greenLight, yellowLight]
 let currentIndex = 0
 
+lights[currentIndex].classList.add("on");
+
 next.addEventListener("click", function(){
-    currentIndex.classList.remove("on")
+    lights[currentIndex].classList.remove("on")
+
+    currentIndex=(currentIndex + 1 ) % lights.length
+
+    lights[currentIndex].classList.add("on")
    
 })
